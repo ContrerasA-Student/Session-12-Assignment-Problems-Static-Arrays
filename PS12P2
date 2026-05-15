@@ -1,0 +1,23 @@
+# Armando Contrereas 5/11/2026
+# ps12P2
+last_names = [
+    "Pele", "Cruyff", "Maradona", "Messi", "Ronaldo",
+    "Ronaldinho", "Zidane", "Buffon", "Baggio", "Maldini"
+]
+
+
+exam_scores = [88, 92, 93, 89, 95, 67, 97, 90, 96, 85]
+
+def display_students(names, scores):
+    print("Students and Exam Scores (Original Order):")
+    for i in range(len(names)):
+        print(names[i], "-", scores[i])
+
+def display_students_reverse(names, scores):
+    print("\nStudents and Exam Scores (Reverse Order):")
+    for i in range(len(names) - 1, -1, -1):
+        print(names[i], "-", scores[i])
+
+# Output
+display_students(last_names, exam_scores)
+display_students_reverse(last_names, exam_scores)
