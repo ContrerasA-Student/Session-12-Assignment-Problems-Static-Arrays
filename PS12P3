@@ -1,0 +1,36 @@
+# Armando Contrereas 5/11/2026
+# ps12P3
+# 2008 Manchester United Squad (Some of them)
+last_names = [
+    "Cristiano", "Rooney", "Vidic", "Rio", "VandeSar",
+    "Giggs", "Evra", "Neville", "Scholes", "Park"
+]
+
+exam_scores = [100, 90, 70, 80, 70, 60, 50, 40, 30, 20]
+
+def highest_score(names, scores):
+    high_var = 0
+    high_index = 0
+
+    for i in range(len(scores)):
+        if scores[i] > high_var:
+            high_var = scores[i]
+            high_index = i
+
+    print("Highest Score:")
+    print(names[high_index], "-", high_var)
+
+def lowest_score(names, scores):
+    low_var = 999
+    low_index = 0
+
+    for i in range(len(scores)):
+        if scores[i] < low_var:
+            low_var = scores[i]
+            low_index = i
+#Output
+    print("\nLowest Score:")
+    print(names[low_index], "-", low_var)
+ 
+highest_score(last_names, exam_scores)
+lowest_score(last_names, exam_scores)
