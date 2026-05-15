@@ -1,0 +1,22 @@
+# Armando Contrereas 5/11/2026
+# ps12P1
+# Array Beginning
+last_names = [
+    "Pele", "Cruyff", "Maradona", "Messi", "Ronaldo",
+    "Ronaldinho", "Zidane", "Buffon", "Baggio", "Maldini"
+]
+
+def display_names(names):
+    for name in names:
+        print(name)
+
+def display_names_reverse(names):
+    for name in reversed(names):
+        print(name)
+        
+#Output
+print("Names in Original Order:")
+display_names(last_names)
+
+print("\nNames in Reverse Order:")
+display_names_reverse(last_names)
