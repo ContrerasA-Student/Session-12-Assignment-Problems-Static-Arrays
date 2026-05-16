@@ -1,12 +1,12 @@
 # Armando Contrereas 5/11/2026
 # ps12P3
 # 2008 Manchester United Squad (Some of them)
-last_names = [
+Lnames = [
     "Cristiano", "Rooney", "Vidic", "Rio", "VandeSar",
     "Giggs", "Evra", "Neville", "Scholes", "Park"
 ]
 
-exam_scores = [100, 90, 70, 80, 70, 60, 50, 40, 30, 20]
+ExamScores = [100, 90, 70, 80, 70, 60, 50, 40, 30, 20]
 
 def highest_score(names, scores):
     high_var = 0
@@ -17,7 +17,7 @@ def highest_score(names, scores):
             high_var = scores[i]
             high_index = i
 
-    print("Highest Score:")
+    print("Highest Score: ")
     print(names[high_index], "-", high_var)
 
 def lowest_score(names, scores):
@@ -31,6 +31,6 @@ def lowest_score(names, scores):
 #Output
     print("\nLowest Score:")
     print(names[low_index], "-", low_var)
- 
-highest_score(last_names, exam_scores)
-lowest_score(last_names, exam_scores)
+
+highest_score(Lnames, ExamScores)
+lowest_score(Lnames, ExamScores)
